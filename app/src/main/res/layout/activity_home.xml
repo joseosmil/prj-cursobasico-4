@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.alticegroup.yearold.HomeActivity"
+        android:weightSum="1">
+
+
+        <EditText
+            android:id="@+id/etxtBirthday"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="78dp"
+            android:drawableRight="@mipmap/ic_calendar_home"
+            android:ems="10"
+            android:hint="@string/birthday"
+            android:inputType="date"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:elevation="0dp"
+            android:text="@string/calculate"
+            android:textColor="@android:color/white"
+            android:layout_alignRight="@+id/etxtBirthday"
+            android:layout_alignEnd="@+id/etxtBirthday"
+            android:layout_alignBottom="@+id/btnClear" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="44dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/clear"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/etxtBirthday"
+            android:layout_alignLeft="@+id/etxtBirthday"
+            android:layout_alignStart="@+id/etxtBirthday" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etxtBirthday"
+            android:layout_alignLeft="@+id/etxtBirthday"
+            android:layout_alignStart="@+id/etxtBirthday"
+            android:layout_marginBottom="62dp"
+            android:text="@string/date_of_birth"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:text="@string/your_age_is"
+            android:textSize="18sp"
+            android:layout_below="@+id/btnClear"
+            android:layout_alignLeft="@+id/txtResult"
+            android:layout_alignStart="@+id/txtResult" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnClear"
+        android:layout_alignStart="@+id/btnClear"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="17dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

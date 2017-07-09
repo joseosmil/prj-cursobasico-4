@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora de Edad</string>
+    <string name="splash_name">Bienvenido a tu calculadora de edad!</string>
+    <string name="splash_description">Splash</string>
+    <string name="birthday" >Seleccionar Fecha</string>
+    <string name="calculate">Calcular</string>
+    <string name="clear">Limpiar</string>
+    <string name="date_of_birth">Fecha de Nacimiento:</string>
+    <string name="your_age_is">Tu edad es:</string>
+</resources>
